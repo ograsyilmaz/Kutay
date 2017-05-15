@@ -44,3 +44,19 @@ $('#toggle').click(function() {
     $(this).toggleClass('active');
     $('#overlay').toggleClass('open');
 });
+
+// $('.ucgen').click(function(){
+  
+//   scrollkonum(#protfolio);
+// });
+
+// /////scroll ücgren
+
+
+// $scrollkonu=function(){
+// var top= $('#'+deger+'').offset();
+// window.screenTop(0,top)
+// }
+
+
+
