@@ -41,7 +41,7 @@ margin-top: 65.5px;
 }
 .social-media-list li{
  
-      padding: 0 15px 0 15px;
+     padding-right: 10px;
 }
 .social-media-list li:last-child{
     margin-right: 0;
