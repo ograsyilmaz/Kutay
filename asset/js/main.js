@@ -3,29 +3,35 @@
     // büyük eşit falan  yap deger kontürlu
 
       $( document ).ready(function() {
-                var boyut=$(document).height();
-                var ucgen=$('.ucgen').height();
-                var fark=boyut-ucgen;
-                var mainblok=$('.main-blok').height()+$('.ucgen').height();
+                var boyut=$(window).innerHeight();
+                var ucgen=$('.ucgen').innerHeight();
+            
+                var mainblok=$('.main-blok').innerHeight()+$('.ucgen').innerHeight();
+                  var fark=boyut-mainblok;
                 var bottomdeger="";
                 var deger="";
+                  console.log(boyut+ "-"+mainblok );
                 if(fark>0)
                 {
-                  deger=(boyut-mainblok);
-                  console.log("fark sıfırdan büyük");
-                    bottomdeger=5;
+                  bottomdeger=20;
+           deger= boyut-(mainblok+bottomdeger);
+             console.log(deger + "deger");
+                 
                     
                 }
 
                 else if (fark===0) {
-                  deger=5;
+                  bottomdeger=0;
+deger= boyut-(mainblok+bottomdeger);
+
+                 
                   console.log("fark sıfıra eşit");
                    bottomdeger=2;
                 }
                 else {
-                  deger=5;
+                  deger=0;
                   console.log("fark - deger");
-                  bottomdeger=1;
+                  bottomdeger=0;
                 }
 
                   $(".ucgen").css({"margin-top":deger+"px","margin-bottom":bottomdeger+"px"});
