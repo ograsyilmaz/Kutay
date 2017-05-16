@@ -145,24 +145,10 @@ margin-left: 1.3em;
 }
 .col-center{
     float: none;
-    text-align: left;
+    /*text-align: left;*/
     display: inline-block;
 }
 
-@media (max-width: 991px) {
-    .col-center{
-        text-align:center;
-    }
-	
-
-}
-
-@media (max-width:414px) {
-  .img-center{
-   margin-left: 0;
-    margin-right:0;
-	}
-}
 
 
 
@@ -228,6 +214,22 @@ margin-top: 52px;
 }
 
 
+
+/*
+Protfolio resimleri*/
+
+.profolio-img{
+height: 288px;
+background-repeat: no-repeat;
+}
+
+
+
+
+
+
+/*mediaquery*/
+
  @media (max-width: 768px) {
    .portfolio-list{
 padding: 0;
@@ -240,9 +242,23 @@ margin: 0;
 
    }
 
-   logo-blok {
+   .logo-blok {
     margin-top: 50.5px;
    }
 
     }
 	
+@media (max-width: 991px) {
+    .col-center{
+        text-align:center;
+    }
+	
+
+}
+
+@media (max-width:414px) {
+  .img-center{
+   margin-left: 0;
+    margin-right:0;
+	}
+}
