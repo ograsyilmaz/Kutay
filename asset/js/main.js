@@ -17,7 +17,7 @@
            deger= boyut-(mainblok+bottomdeger);
              console.log(deger + "deger");
                  
-                    
+                       console.log("fark sıfırdan büyük");
                 }
 
                 else if (fark===0) {
