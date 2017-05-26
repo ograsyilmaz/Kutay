@@ -52,11 +52,11 @@ $(function () {
   $(".portfolio-list>li").click(function () {
 
     selectedClass = $(this).attr('id');
-    $(".portolio-item-list").fadeTo(100, 0.1);
+    $(".portolio-item-list>li").fadeTo(100, 0.1);
     $(".portolio-item-list div").not("." + selectedClass).fadeOut().removeClass('scale-anm');
     setTimeout(function () {
       $("." + selectedClass).fadeIn().addClass('scale-anm');
-      $(".portolio-item-list").fadeTo(300, 1);
+      $(".portolio-item-list>li").fadeTo(300, 1);
     }, 300);
 
   });
