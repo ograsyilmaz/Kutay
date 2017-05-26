@@ -66,8 +66,8 @@ $(function () {
 
 $(function () {
   $(".ucgen").click(function () {
-    var top = $(".portfolio").offset() +10;
-  
+    var top = $(".portfolio").offset();
+  top=top+10;
 
 
     $("body,html").animate({
