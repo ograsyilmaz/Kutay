@@ -45,6 +45,29 @@ $('#toggle').click(function() {
     $('#overlay').toggleClass('open');
 });
 
+
+// Porfolio  seçmek için yazılan kod
+
+$(function() {
+		var selectedClass = "";
+		$(".portfolio-list>li").click(function(){ 
+    
+		selectedClass = $(this).attr('id');
+     $(".portolio-item-list").fadeTo(100, 0.1);
+		$(".portolio-item-list div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
+    setTimeout(function() {
+      $("."+selectedClass).fadeIn().addClass('scale-anm');
+      $(".portolio-item-list").fadeTo(300, 1);
+    }, 300); 
+		
+	});
+});
+
+
+
+
+
+
 // $('.ucgen').click(function(){
   
 //   scrollkonum(#protfolio);
