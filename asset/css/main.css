@@ -90,6 +90,12 @@ margin-top: 65.5px;
 list-style: none;
   float: left;
  
+ 
+}
+.portfolio-list li:hover{
+ border:2px solid #ffffff; 
+ margin-left: 5px;
+font-weight: bold;
 }
 
 .portfolio-list li:first-child
@@ -118,14 +124,14 @@ list-style: none;
 
 }
 
-.portfolio-list li a:hover{
+/*.portfolio-list li a:hover{
  border-radius: 64px;
   background-color: #ffffff;
   border: solid 1px #ffffff;
   color: #1b1b1b;
     padding: 0 20px;
    
-}
+}*/
 
 /*porfoliobox-block*/
 
